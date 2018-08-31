@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.saikat.com.basiyncomm_project.activity.HomeActivity">
+    <include
+        layout="@layout/header_layout"
+        android:id="@+id/toolbar"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10sp"
+        android:id="@+id/customer_ll"
+        android:weightSum="1"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="70sp">
+        <ImageView
+            android:layout_width="0sp"
+            android:layout_weight="0.17"
+            android:layout_gravity="center"
+            android:src="@drawable/customer"
+            android:layout_height="40sp" />
+        <TextView
+            android:layout_width="0sp"
+            android:layout_weight="0.55"
+            android:text="Customer (52)"
+            android:textColor="@color/green"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:layout_marginLeft="20sp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0sp"
+            android:layout_weight=".27"
+            android:text="19/01/12"
+            android:textColor="@color/green"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <include
+        android:layout_below="@+id/customer_ll"
+        android:layout_width="match_parent"
+        android:id="@+id/customer_dv"
+        android:layout_height="wrap_content"
+        layout="@layout/home_divider"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10sp"
+        android:id="@+id/seller_ll"
+        android:weightSum="1"
+        android:layout_below="@+id/customer_dv"
+        android:layout_height="70sp">
+        <ImageView
+            android:layout_width="0sp"
+            android:layout_weight="0.17"
+            android:layout_gravity="center"
+            android:src="@drawable/businessman"
+            android:layout_height="40sp" />
+        <TextView
+            android:layout_width="0sp"
+            android:layout_weight="0.55"
+            android:text="Sellers (8)"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/yellow"
+            android:layout_marginLeft="20sp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0sp"
+            android:layout_weight=".27"
+            android:text="19/01/12"
+            android:textColor="@color/yellow"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <include
+        android:layout_below="@+id/seller_ll"
+        android:layout_width="match_parent"
+        android:id="@+id/seller_dv"
+        android:layout_height="wrap_content"
+        layout="@layout/home_divider"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10sp"
+        android:id="@+id/team_ll"
+        android:weightSum="1"
+        android:layout_below="@+id/seller_dv"
+        android:layout_height="70sp">
+        <ImageView
+            android:layout_width="0sp"
+            android:layout_weight="0.17"
+            android:layout_gravity="center"
+            android:src="@drawable/group"
+            android:layout_height="40sp" />
+        <TextView
+            android:layout_width="0sp"
+            android:layout_weight="0.55"
+            android:text="Team (4)"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/light_blue"
+            android:layout_marginLeft="20sp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0sp"
+            android:layout_weight=".27"
+            android:text="19/01/12"
+            android:textColor="@color/light_blue"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <include
+        android:layout_below="@+id/team_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/home_divider"/>
+    <ImageView
+        android:layout_width="40sp"
+        android:id="@+id/add_msg_iv"
+        android:layout_marginBottom="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/pencil"
+        android:layout_height="40sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BASIYNCOMM_PROJECT</string>
+    <string name="TO_MSG">to_msg</string>
+    <string name="FROM_MSG">from_msg</string>
+    <string name="MSG_TEXT">msg_txt</string>
+    <string name="MSG_IMAGE">msg_img</string>
+    <string name="msg">I am coming there to meet you,will you be available how would that be possible</string>
+</resources>

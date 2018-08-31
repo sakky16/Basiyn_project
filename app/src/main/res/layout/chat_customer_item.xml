@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:id="@+id/rootView"
+        android:padding="15sp"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="0sp"
+            android:layout_weight=".17"
+            android:layout_height="match_parent"
+            android:src="@drawable/bil_image"
+            />
+        <LinearLayout
+            android:layout_width="0sp"
+            android:layout_weight=".60"
+            android:orientation="vertical"
+            android:layout_marginLeft="10sp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Kretesh chandre sharma"
+                android:textSize="18sp"
+                android:id="@+id/name_tv"
+                android:textColor="@color/light_blue"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/address_tv"
+                android:textColor="@color/light_blue"
+                android:text="#112 ,block-1B,Harsha Landmark,Horamavu, Bangalore-560043"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="0sp"
+            android:layout_weight=".22"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="19/03/18"
+                android:textColor="@color/yellow"
+                android:id="@+id/date_tv"
+                android:layout_marginTop="5sp"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <include
+        layout="@layout/home_divider"/>
+
+
+
+
+    
+
+
+
+
+</LinearLayout>

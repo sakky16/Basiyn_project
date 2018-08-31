@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/light_grey"
+    android:layout_height="match_parent"
+    tools:context="android.saikat.com.basiyncomm_project.activity.NewMessageActivity">
+
+    <include
+        android:id="@+id/header_ll"
+        layout="@layout/header_layout"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/chat_rv"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_above="@+id/chat_box_ll"
+        android:layout_below="@+id/header_ll"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/chat_box_ll"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:layout_marginLeft="20sp"
+            android:layout_height="40sp">
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_weight="0.77"
+                android:weightSum="1"
+                android:padding="7sp"
+                android:background="@drawable/white_background"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="0sp"
+                    android:layout_weight="0.12"
+                    android:layout_gravity="center"
+                    android:src="@drawable/smiley"
+                    android:layout_height="25sp" />
+                <EditText
+                    android:layout_width="0sp"
+                    android:layout_weight=".76"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@null"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="0sp"
+                    android:layout_weight="0.12"
+                    android:layout_gravity="center"
+                    android:src="@drawable/camera"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_weight="0.2"
+                android:weightSum="1"
+                android:layout_marginLeft="10sp"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="0sp"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/attachment"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:layout_width="0sp"
+                    android:layout_weight="0.5"
+                    android:id="@+id/next_iv"
+                    android:src="@drawable/right_arrow"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
